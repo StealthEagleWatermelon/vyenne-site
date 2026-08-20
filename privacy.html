@@ -1,27 +1,484 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Privacy — Vyenne</title>
-<style>
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    background:#120F1A; color:#EDE8F5; margin:0; padding:48px 24px; line-height:1.6}
-  main{max-width:680px; margin:0 auto}
-  h1{font-weight:600}
-  p{color:#A89AC6}
-  a{color:#B09DD8}
-</style>
-</head>
-<body>
-  <main>
-    <h1>Privacy policy</h1>
-    <p><em>Placeholder — full privacy policy to be published before launch.</em></p>
-    <p>Vyenne is operated by VOX NOVA LTD (company no. 17406116), registered in England &amp; Wales
-      at 71–75 Shelton Street, Covent Garden, London, WC2H 9JQ.</p>
-    <p>For any privacy question or data request, contact
-      <a href="mailto:founder@vyenne.com">founder@vyenne.com</a>.</p>
-    <p><a href="/">← Back</a></p>
-  </main>
-</body>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vyenne - Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Playfair+Display:ital,wght@0,400;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f8f5fd;
+        --lilac: #9b7ec8;
+        --lilac-dim: rgba(155, 126, 200, 0.12);
+        --ink: #1e1828;
+        --t2: #6a5880;
+        --t3: #80708f;
+        --border: #e4d8f4;
+        --rose: #c45f86;
+        --gold: #c99a3f;
+        --danger: #b23a48;
+        --card: #fff;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: var(--bg);
+        font-family: Inter, sans-serif;
+        color: var(--ink);
+        padding: 40px 32px 80px;
+        line-height: 1.6;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .back {
+        display: inline-block;
+        margin-bottom: 6px;
+        font-size: 12px;
+        color: var(--lilac);
+        text-decoration: none;
+      }
+      .draft {
+        display: inline-block;
+        font-size: 10.5px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: var(--gold);
+        background: rgba(201, 154, 63, 0.1);
+        border: 1px solid rgba(201, 154, 63, 0.32);
+        border-radius: 6px;
+        padding: 3px 9px;
+        margin-bottom: 10px;
+      }
+      .mark {
+        font-family: "DM Serif Display";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 17px;
+        color: var(--lilac);
+      }
+      h1 {
+        font-family: "Playfair Display";
+        font-style: italic;
+        font-weight: 600;
+        font-size: 32px;
+        margin: 6px 0 6px;
+        letter-spacing: -0.01em;
+      }
+      .meta {
+        font-size: 11.5px;
+        color: var(--t3);
+        margin-bottom: 10px;
+      }
+      .lead {
+        font-size: 14.5px;
+        color: var(--t2);
+        max-width: 62ch;
+      }
+      .lead b {
+        color: var(--ink);
+      }
+
+      h2 {
+        font-family: "Playfair Display";
+        font-style: italic;
+        font-weight: 600;
+        font-size: 20px;
+        margin: 34px 0 6px;
+      }
+      h2 .n {
+        font-style: normal;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 12px;
+        color: var(--lilac);
+        background: var(--lilac-dim);
+        border-radius: 8px;
+        padding: 3px 9px;
+        margin-right: 11px;
+        vertical-align: middle;
+      }
+      p {
+        font-size: 13.5px;
+        color: var(--t2);
+        margin: 8px 0;
+      }
+      p b {
+        color: var(--ink);
+        font-weight: 600;
+      }
+      ul {
+        list-style: none;
+        margin: 8px 0;
+      }
+      li {
+        font-size: 13.5px;
+        color: var(--t2);
+        padding: 4px 0 4px 18px;
+        position: relative;
+      }
+      li::before {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 12px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--lilac);
+      }
+      li b {
+        color: var(--ink);
+        font-weight: 600;
+      }
+      .ph {
+        color: var(--rose);
+        font-weight: 600;
+      }
+
+      /* processors table */
+      .proc {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 4px 18px;
+        margin-top: 8px;
+      }
+      .proc .r {
+        display: flex;
+        gap: 14px;
+        padding: 11px 0;
+        border-bottom: 1px solid var(--border);
+        align-items: baseline;
+      }
+      .proc .r:last-child {
+        border-bottom: none;
+      }
+      .proc .who {
+        font-weight: 700;
+        color: var(--ink);
+        font-size: 13px;
+        min-width: 120px;
+        flex: none;
+      }
+      .proc .what {
+        font-size: 12.5px;
+        color: var(--t2);
+      }
+
+      /* private-to-you callout */
+      .promise {
+        background: linear-gradient(180deg, #fcfaff, #f4eefb);
+        border: 1px solid #d8c6ee;
+        border-radius: 14px;
+        padding: 17px 20px;
+        margin-top: 12px;
+      }
+      .promise .pt {
+        font-family: "Playfair Display";
+        font-style: italic;
+        font-weight: 600;
+        font-size: 17px;
+        color: var(--ink);
+      }
+      .promise p {
+        margin-top: 5px;
+        color: var(--t2);
+        font-size: 13px;
+      }
+
+      .foot {
+        margin-top: 48px;
+        border-top: 1px solid var(--border);
+        padding-top: 18px;
+        font-size: 12px;
+        color: var(--t3);
+      }
+      .foot a {
+        color: var(--lilac);
+        text-decoration: none;
+        border-bottom: 1px solid #cdb6e8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <a class="back" href="#">&larr; Account</a>
+      <span class="draft">Public beta</span>
+      <div class="mark">Vyenne</div>
+      <h1>Privacy Policy</h1>
+      <p class="meta">
+        Effective 20 August 2026 &middot; Controller: VOX NOVA LTD, United
+        Kingdom
+      </p>
+      <p class="lead">
+        What you make on Vyenne is personal. Here, in plain words, is
+        <b>what we collect, what we do with it, and how to get rid of it</b>. If
+        anything's unclear, email
+        <a href="mailto:founder@vyenne.com" style="color: var(--lilac)"
+          >founder@vyenne.com</a
+        >
+        - a person reads and answers. We follow UK data protection law (UK
+        GDPR).
+      </p>
+
+      <div class="promise">
+        <div class="pt">Your stories are private from other users.</div>
+        <p>
+          No one else using Vyenne can see your library, your preferences, or
+          anything you make. We never sell your data, and none of it is used for
+          advertising. Limited access by us and the providers listed below -
+          solely to run the service and keep it safe - is described in full on
+          this page.
+        </p>
+      </div>
+
+      <h2><span class="n">01</span>Who we are</h2>
+      <p>
+        Vyenne is run by VOX NOVA LTD, a company registered in England and Wales
+        (company number 17406116), whose registered office is at 71-75 Shelton
+        Street, Covent Garden, London WC2H 9JQ. VOX NOVA LTD is the data
+        controller for the personal data described here.
+      </p>
+
+      <h2><span class="n">02</span>What we collect</h2>
+      <ul>
+        <li>
+          <b>Your account details</b> - your email address, date of birth,
+          profile details, and records showing when you accepted the Terms and
+          confirmed you are 18 or over.
+        </li>
+        <li>
+          <b>Your story preferences</b> - the pairings, themes, heat levels,
+          content limits, characters, and narrator choices you select or save.
+        </li>
+        <li>
+          <b>What you create</b> - your story briefs, stories, series, titles,
+          cover art, and narration.
+        </li>
+        <li>
+          <b>How you use your library</b> - stories you read or listen to, your
+          place in a story, and any ratings you give.
+        </li>
+        <li>
+          <b>Messages you send us</b> - feedback, support messages, deletion
+          reasons, and reports you submit.
+        </li>
+        <li>
+          <b>Your subscription status</b> - your plan, trial status, and renewal
+          or expiry date. Apple handles your payment, so we do not receive your
+          card or bank details.
+        </li>
+        <li>
+          <b>Service and safety records</b> - when content was created, the
+          amount of narration used, safety-check results, blocked requests,
+          warnings, and actions taken on an account.
+        </li>
+        <li>
+          <b>Technical information</b> - your app version, device platform, IP
+          address, request times, and basic installation or crash information
+          supplied by Apple.
+        </li>
+      </ul>
+      <h2><span class="n">03</span>What never leaves your phone</h2>
+      <p>
+        Face ID (or your device passcode) locks the app when you step away. The
+        check is performed by Apple, on your device; the app learns only whether
+        the unlock succeeded.
+        <b>Your Face ID data stays on your device and never reaches us.</b>
+      </p>
+
+      <h2><span class="n">04</span>How we treat your tastes</h2>
+      <p>
+        Your tastes are choices about fiction, and we treat them as personal.
+        We handle them as follows:
+      </p>
+      <ul>
+        <li>
+          They are used to <b>write and narrate your stories</b> and to shape
+          what the app suggests to you.
+        </li>
+        <li>
+          They are never sold, never shared with advertisers, and never used to
+          build a picture of you outside the app.
+        </li>
+        <li>
+          An individual account is only ever reviewed by a person for support
+          you've requested, for safety, or where the law requires it.
+        </li>
+      </ul>
+
+      <h2><span class="n">05</span>How we use your data</h2>
+      <p>We use your data to:</p>
+      <ul>
+        <li>
+          Create and manage your account, sign you in, save your library, and
+          provide your subscription.
+        </li>
+        <li>
+          Use your choices and story briefs to write, narrate, and illustrate
+          the stories you request.
+        </li>
+        <li>
+          Remember your saved preferences, characters, narrators, and content
+          limits.
+        </li>
+        <li>
+          Apply the Code of conduct, manage fair-use limits, prevent automation
+          or resale, and investigate safety concerns.
+        </li>
+        <li>Answer feedback, support requests, and complaints.</li>
+        <li>Keep Vyenne working, diagnose faults, and protect accounts.</li>
+        <li>Meet our legal duties and respond to lawful requests.</li>
+      </ul>
+      <p>
+        We rely on our contract with you when processing is needed to provide
+        Vyenne. We rely on our legitimate interests when keeping the service
+        safe, preventing misuse, and fixing faults. We rely on legal obligations
+        where the law requires us to keep or disclose information.
+      </p>
+
+      <h2><span class="n">06</span>Who we share data with</h2>
+      <p>
+        We use service providers to run Vyenne. Each receives only the data
+        needed for its role.
+      </p>
+      <div class="proc">
+        <div class="r">
+          <div class="who">Account and library</div>
+          <div class="what">
+            Account and library services store your account and library in
+            <b>London, UK</b>.
+          </div>
+        </div>
+        <div class="r">
+          <div class="who">Story creation</div>
+          <div class="what">
+            AI providers receive the brief or story text needed to write,
+            narrate and illustrate your stories. They do not receive your email
+            address.
+          </div>
+        </div>
+        <div class="r">
+          <div class="who">Sign-in</div>
+          <div class="what">
+            An email provider receives your email address to send your one-time
+            sign-in code.
+          </div>
+        </div>
+        <div class="r">
+          <div class="who">Payments</div>
+          <div class="what">
+            Apple handles subscriptions, payments and app distribution under its
+            own privacy terms. We receive your subscription status, but never
+            your payment details.
+          </div>
+        </div>
+      </div>
+
+      <h2><span class="n">07</span>Where your data goes</h2>
+      <p>
+        Your account and library live in London. To write, narrate and
+        illustrate a story, its inputs travel to the US-based AI providers
+        described above. For those transfers we rely on recognised safeguards
+        such as the UK International Data Transfer Agreement or standard
+        contractual clauses. Email
+        <a href="mailto:founder@vyenne.com">founder@vyenne.com</a> if you want
+        more information about those safeguards.
+      </p>
+
+      <h2><span class="n">08</span>How long we keep it</h2>
+      <p>
+        While your account is open, we keep your account details, library and
+        saved choices so Vyenne remains available to you. Operational logs are
+        normally deleted after 30 days. Safety records may be kept longer where
+        needed to investigate misuse, enforce our terms or meet a legal
+        obligation.
+      </p>
+
+      <h2><span class="n">09</span>Deleting your account</h2>
+      <p>
+        You can delete your account from inside the app at any time. Your
+        account closes immediately, and the full purge completes
+        <b>within 28 days</b>. Deletion removes your email, date of birth,
+        preferences, limits, listening history, and everything else that
+        identifies you. Any later account starts afresh.
+      </p>
+      <p>
+        After account deletion, generated story text, cover art and audio are
+        retained without your account identifier. They can no longer be linked
+        to your account, and your library is permanently removed. Ratings and
+        feedback are retained on the same basis. We also retain a limited record
+        confirming completion of the deletion so we can demonstrate compliance
+        with data protection law.
+      </p>
+
+      <h2><span class="n">10</span>Your rights</h2>
+      <p>Under UK GDPR you can ask us to:</p>
+      <ul>
+        <li>Show you the data we hold about you, or give you a copy.</li>
+        <li>Correct anything inaccurate.</li>
+        <li>
+          <b>Delete</b> your account and data (also available in-app, no email
+          needed).
+        </li>
+        <li>Restrict how we use your data in certain circumstances.</li>
+        <li>Object to certain uses of your data.</li>
+        <li>
+          Receive certain data you gave us in a portable format, where the right
+          applies.
+        </li>
+        <li>Withdraw any consent you've given.</li>
+      </ul>
+      <p>
+        Email
+        <a href="mailto:founder@vyenne.com" style="color: var(--lilac)"
+          >founder@vyenne.com</a
+        >
+        and we'll respond within a month. If you're unhappy with how we've
+        handled something, you can complain to the UK Information Commissioner's
+        Office (<a href="https://ico.org.uk/">ico.org.uk</a>).
+      </p>
+
+      <h2><span class="n">11</span>Adults only</h2>
+      <p>
+        Vyenne is for people aged 18 and over. You confirm your date of birth at
+        sign-up, and the app carries an 18+ rating. It isn't for children, and
+        we don't knowingly hold data about anyone under 18 - if we learn we do,
+        we'll delete the account.
+      </p>
+
+      <h2><span class="n">12</span>Security</h2>
+      <p>
+        Your data is encrypted in transit and at rest. Access controls prevent
+        other users from reading your records and limit access by us and our
+        providers to what is needed to run Vyenne. On your phone, the app locks
+        when you leave it and asks for Face ID or your device passcode to
+        reopen. No system is perfectly secure.
+      </p>
+
+      <h2><span class="n">13</span>Changes to this policy</h2>
+      <p>
+        Vyenne is a public beta, so we may update this policy as the service
+        develops. If a change matters to you, we'll tell you in the app before
+        it takes effect.
+      </p>
+
+      <div class="foot">
+        Questions about your privacy? Email
+        <a href="mailto:founder@vyenne.com">founder@vyenne.com</a> &middot;
+        <a href="./terms.html">Terms</a> &middot;
+        <a href="./code-of-conduct.html">Code of conduct</a>
+      </div>
+    </div>
+  </body>
 </html>

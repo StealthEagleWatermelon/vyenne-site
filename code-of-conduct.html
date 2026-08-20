@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vyenne - Code of conduct</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Playfair+Display:ital,wght@0,400;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F8F5FD; --lilac:#9B7EC8; --lilac-dim:rgba(155,126,200,.12); --ink:#1E1828;
+    --t2:#6A5880; --t3:#80708F; --border:#E4D8F4; --rose:#C45F86; --gold:#C99A3F; --danger:#B23A48;
+    --card:#fff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg);font-family:Inter,sans-serif;color:var(--ink);padding:40px 32px 80px;line-height:1.55;}
+  .wrap{max-width:760px;margin:0 auto;}
+  .mark{font-family:'DM Serif Display';font-style:italic;font-weight:400;font-size:17px;color:var(--lilac);}
+  h1{font-family:'Playfair Display';font-style:italic;font-weight:600;font-size:34px;margin:8px 0 6px;letter-spacing:-.01em;}
+  .meta{font-size:11.5px;color:var(--t3);margin-bottom:8px;}
+  .lead{font-size:15px;color:var(--t2);}
+  .lead b{color:var(--ink);}
+  h2{font-family:'Playfair Display';font-style:italic;font-weight:600;font-size:22px;margin:40px 0 10px;}
+  h2 .n{font-style:normal;font-family:Inter;font-weight:700;font-size:13px;color:var(--lilac);background:var(--lilac-dim);border-radius:8px;padding:2px 9px;margin-right:10px;vertical-align:middle;}
+  p{font-size:14px;color:var(--t2);margin:9px 0;}
+  p b{color:var(--ink);}
+  ul{list-style:none;margin:10px 0;}
+  li{font-size:14px;color:var(--t2);padding:5px 0 5px 20px;position:relative;}
+  li::before{content:"";position:absolute;left:2px;top:13px;width:6px;height:6px;border-radius:50%;background:var(--lilac);}
+  li b{color:var(--ink);font-weight:600;}
+
+  .promise{background:linear-gradient(180deg,#FCFAFF,#F4EEFB);border:1px solid #D8C6EE;border-radius:16px;padding:20px 24px;margin-top:18px;}
+  .promise .pt{font-family:'Playfair Display';font-style:italic;font-weight:600;font-size:19px;color:var(--ink);}
+  .promise p{margin-top:6px;color:var(--t2);font-size:13.5px;}
+
+  /* never list */
+  .never{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:6px 20px;margin-top:6px;}
+  .never .row{display:flex;gap:13px;padding:11px 0;border-bottom:1px solid var(--border);align-items:baseline;}
+  .never .row:last-child{border-bottom:none;}
+  .never .k{font-weight:700;color:var(--ink);font-size:13.5px;min-width:140px;flex:none;}
+  .never .v{font-size:13px;color:var(--t2);}
+
+  /* two checks */
+  .checks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px;}
+  .ck{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:17px 19px;}
+  .ck .kx{font-size:9.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--lilac);}
+  .ck h3{font-family:'Playfair Display';font-style:italic;font-weight:600;font-size:17px;margin:3px 0 6px;}
+  .ck p{font-size:13px;color:var(--t2);margin:0;}
+  .failsafe{background:#F6F1FC;border:1px solid #D8C6EE;border-radius:12px;padding:13px 17px;margin-top:13px;font-size:13px;color:var(--t2);}
+  .failsafe b{color:var(--ink);}
+
+  .danger{background:rgba(178,58,72,.04);border:1px solid rgba(178,58,72,.22);border-radius:14px;padding:16px 20px;margin-top:8px;}
+  .danger p{color:#7a3038;margin:6px 0;}
+  .danger b{color:var(--danger);}
+
+  .foot{margin-top:50px;border-top:1px solid var(--border);padding-top:18px;font-size:12px;color:var(--t3);}
+  .foot a{color:var(--lilac);text-decoration:none;border-bottom:1px solid #CDB6E8;}
+  .back{display:inline-block;margin-bottom:6px;font-size:12px;color:var(--lilac);text-decoration:none;}
+  .draft{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--gold);background:rgba(201,154,63,.10);border:1px solid rgba(201,154,63,.32);border-radius:6px;padding:3px 9px;margin-bottom:10px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">&larr; Vyenne</a>
+  <span class="draft">Public beta</span>
+  <div class="mark">Vyenne</div>
+  <h1>Code of conduct</h1>
+  <div class="meta">What every story guarantees, and the few lines that hold for everyone. &middot; Effective 20 August 2026 &middot; VOX NOVA LTD (company number 17406116), England and Wales</div>
+  <p class="lead">Vyenne writes adult romance from your choices, at the heat level you choose. A short, fixed set of boundaries applies to every story. This is what they are, how they're checked, and what happens if they're crossed.</p>
+
+  <div class="promise">
+    <div class="pt">Every story is adult, fiction, and consensual.</div>
+    <p>The characters are invented adults, and desire is always mutual. That holds beneath every choice you make - it isn't a setting, and it can't be switched off.</p>
+  </div>
+
+  <h2><span class="n">1</span>Your story, your call</h2>
+  <p>You set the cast, the heat, the themes and the pace. You can also set <b>your own limits</b> in your account: anything you mark is never written into a story, and never offered to you again. Your stories are private from other users and never sold.</p>
+
+  <h2><span class="n">2</span>What's never written</h2>
+  <p>Whatever you choose, a Vyenne story never contains any of this. Asking for it won't produce a story.</p>
+  <div class="never">
+    <div class="row"><div class="k">No one underage</div><div class="v">Every character is a grown adult - no exceptions, however it's phrased.</div></div>
+    <div class="row"><div class="k">No one real</div><div class="v">The cast is invented for you - never a real, identifiable person, in words or in cover art.</div></div>
+    <div class="row"><div class="k">Nothing forced</div><div class="v">Desire is always mutual. Nothing coerced, and nothing that uses drink or drugs to take consent away.</div></div>
+    <div class="row"><div class="k">No family</div><div class="v">Lovers are never actual family.</div></div>
+    <div class="row"><div class="k">Nothing cruel</div><div class="v">No graphic violence, gore, or cruelty written to disturb.</div></div>
+    <div class="row"><div class="k">Nothing hateful</div><div class="v">No hate speech or harassment, and never exposing a real person (doxxing).</div></div>
+    <div class="row"><div class="k">Nothing illegal or harmful</div><div class="v">No animals, no real-world harm, nothing the law forbids or that reads as a &ldquo;how-to&rdquo;.</div></div>
+  </div>
+
+  <h2><span class="n">3</span>How it's checked - before and after</h2>
+  <p>Every story passes two checks, automatically. You never have to ask for them, and there's no way to turn them off.</p>
+  <div class="checks">
+    <div class="ck">
+      <div class="kx">Check one &middot; the request</div>
+      <h3>Before a word is written</h3>
+      <p>Your request is checked first. If anything in it crosses a line above, it's stopped right there - nothing is ever written.</p>
+    </div>
+    <div class="ck">
+      <div class="kx">Check two &middot; the story</div>
+      <h3>Before you ever see it</h3>
+      <p>The finished story is checked again, on its own, before it reaches you - because a request that looks fine can still produce something that isn't.</p>
+    </div>
+  </div>
+  <div class="failsafe"><b>It fails safe.</b> If a check can't be sure, the story simply doesn't run - you're asked to change a detail, and never shown a half-checked page. The same checks cover the cover art.</div>
+
+  <h2><span class="n">4</span>If a line is crossed</h2>
+  <p>If a request crosses a boundary, it stops and you're asked to change it.</p>
+  <div class="danger">
+    <p>Deliberate or repeated attempts to get past these boundaries can <b>suspend or end your account</b>.</p>
+    <p>Anything involving a minor is treated with <b>zero tolerance</b>: it ends the account immediately and is <b>reported to the authorities</b>, as the law requires. There is no second chance, and no mode that allows it.</p>
+  </div>
+
+  <h2><span class="n">5</span>Found something wrong? Report it</h2>
+  <p>If a story ever contains something it shouldn't, report it from the story itself. It goes straight to a person, and it helps the checks above catch what automation missed.</p>
+
+  <h2><span class="n">6</span>Your privacy</h2>
+  <p>Your stories and limits are private from other users. Vyenne and its providers access them only where needed to create your stories, provide support or keep the service safe. The Privacy Policy explains this in full.</p>
+
+  <div class="foot">
+    Questions, or something to report? <a href="mailto:founder@vyenne.com">founder@vyenne.com</a> &middot; This code forms part of the <a href="./terms.html">Terms of Use</a> and sits alongside the <a href="./privacy.html">Privacy Policy</a>.
+  </div>
+</div>
+</body>
+</html>

@@ -1,26 +1,466 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Terms — Vyenne</title>
-<style>
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    background:#120F1A; color:#EDE8F5; margin:0; padding:48px 24px; line-height:1.6}
-  main{max-width:680px; margin:0 auto}
-  h1{font-weight:600}
-  p{color:#A89AC6}
-  a{color:#B09DD8}
-</style>
-</head>
-<body>
-  <main>
-    <h1>Terms of service</h1>
-    <p><em>Placeholder — full terms to be published before launch.</em></p>
-    <p>Vyenne is operated by VOX NOVA LTD (company no. 17406116), registered in England &amp; Wales
-      at 71–75 Shelton Street, Covent Garden, London, WC2H 9JQ. Vyenne is an 18+ service.</p>
-    <p>Questions: <a href="mailto:founder@vyenne.com">founder@vyenne.com</a>.</p>
-    <p><a href="/">← Back</a></p>
-  </main>
-</body>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vyenne - Terms of Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Playfair+Display:ital,wght@0,400;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f8f5fd;
+        --lilac: #9b7ec8;
+        --lilac-dim: rgba(155, 126, 200, 0.12);
+        --ink: #1e1828;
+        --t2: #6a5880;
+        --t3: #80708f;
+        --border: #e4d8f4;
+        --rose: #c45f86;
+        --gold: #c99a3f;
+        --danger: #b23a48;
+        --card: #fff;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: var(--bg);
+        font-family: Inter, sans-serif;
+        color: var(--ink);
+        padding: 40px 32px 80px;
+        line-height: 1.6;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .back {
+        display: inline-block;
+        margin-bottom: 6px;
+        font-size: 12px;
+        color: var(--lilac);
+        text-decoration: none;
+      }
+      .draft {
+        display: inline-block;
+        font-size: 10.5px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: var(--gold);
+        background: rgba(201, 154, 63, 0.1);
+        border: 1px solid rgba(201, 154, 63, 0.32);
+        border-radius: 6px;
+        padding: 3px 9px;
+        margin-bottom: 10px;
+      }
+      .mark {
+        font-family: "DM Serif Display";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 17px;
+        color: var(--lilac);
+      }
+      h1 {
+        font-family: "Playfair Display";
+        font-style: italic;
+        font-weight: 600;
+        font-size: 32px;
+        margin: 6px 0 6px;
+        letter-spacing: -0.01em;
+      }
+      .meta {
+        font-size: 11.5px;
+        color: var(--t3);
+        margin-bottom: 10px;
+      }
+      .lead {
+        font-size: 14.5px;
+        color: var(--t2);
+        max-width: 62ch;
+      }
+      .lead b {
+        color: var(--ink);
+      }
+
+      h2 {
+        font-family: "Playfair Display";
+        font-style: italic;
+        font-weight: 600;
+        font-size: 20px;
+        margin: 34px 0 6px;
+      }
+      h2 .n {
+        font-style: normal;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 12px;
+        color: var(--lilac);
+        background: var(--lilac-dim);
+        border-radius: 8px;
+        padding: 3px 9px;
+        margin-right: 11px;
+        vertical-align: middle;
+      }
+      p {
+        font-size: 13.5px;
+        color: var(--t2);
+        margin: 8px 0;
+      }
+      p b {
+        color: var(--ink);
+        font-weight: 600;
+      }
+      ul {
+        list-style: none;
+        margin: 8px 0;
+      }
+      li {
+        font-size: 13.5px;
+        color: var(--t2);
+        padding: 4px 0 4px 18px;
+        position: relative;
+      }
+      li::before {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 12px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--lilac);
+      }
+      li b {
+        color: var(--ink);
+        font-weight: 600;
+      }
+      .ph {
+        color: var(--rose);
+        font-weight: 600;
+      }
+      .opbox {
+        background: rgba(196, 95, 134, 0.05);
+        border: 1px dashed rgba(196, 95, 134, 0.45);
+        border-radius: 12px;
+        padding: 13px 17px;
+        margin: 10px 0;
+      }
+      .opbox p {
+        margin: 4px 0;
+      }
+
+      .foot {
+        margin-top: 48px;
+        border-top: 1px solid var(--border);
+        padding-top: 18px;
+        font-size: 12px;
+        color: var(--t3);
+      }
+      .foot a {
+        color: var(--lilac);
+        text-decoration: none;
+        border-bottom: 1px solid #cdb6e8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <a class="back" href="#">&larr; Account</a>
+      <span class="draft">Public beta</span>
+      <div class="mark">Vyenne</div>
+      <h1>Terms of Use</h1>
+      <p class="meta">Effective 20 August 2026 &middot; United Kingdom</p>
+      <p class="lead">
+        These terms are the agreement between you and us for the Vyenne app. By
+        creating an account or using Vyenne, <b>you agree to them</b>. If you
+        don't agree, please don't use the app. They're written in plain words -
+        if anything is unclear, ask us.
+      </p>
+
+      <h2><span class="n">01</span>Who runs Vyenne</h2>
+      <div class="opbox">
+        <p>
+          Vyenne is operated by VOX NOVA LTD, a company registered in England
+          and Wales (company number 17406116), whose registered office is at
+          71-75 Shelton Street, Covent Garden, London WC2H 9JQ ("we", "us").
+        </p>
+      </div>
+      <p>
+        Vyenne is our trading name for the service. Contact details are at the
+        end of these terms.
+      </p>
+
+      <h2><span class="n">02</span>This is an early release</h2>
+      <p>
+        Vyenne is a public beta. It's a real, live service - you can subscribe,
+        and your account and library are here to stay - but it's early, and
+        improving quickly. That means:
+      </p>
+      <ul>
+        <li>
+          Features may change, be added, or be switched off as we learn what
+          works.
+        </li>
+        <li>
+          You may hit the occasional rough edge or bug. Tell us and we'll put it
+          right.
+        </li>
+        <li>
+          Where a change materially affects you, we'll give you reasonable
+          notice in the app.
+        </li>
+      </ul>
+      <p>
+        Feedback is welcome - there's a "Give feedback" option in your profile,
+        or you can email us directly.
+      </p>
+
+      <h2><span class="n">03</span>Who can use Vyenne</h2>
+      <p>
+        Vyenne is for adults only. You must be <b>18 or over</b> to create an
+        account or use any part of the app. You gave us your date of birth at
+        sign-up and confirmed you're an adult; we rely on that being true. If we
+        believe an account belongs to someone under 18, we'll close it.
+      </p>
+      <p>
+        Vyenne is offered in the United Kingdom only for now - it's built as a
+        UK service, for UK users.
+      </p>
+
+      <h2><span class="n">04</span>Your account</h2>
+      <p>
+        You sign in with a one-time code sent to your email, and unlock the app
+        with Face ID or Touch ID on your device. There's no password. That
+        means:
+      </p>
+      <ul>
+        <li>
+          Keep your email account secure - it's the key to your Vyenne account.
+        </li>
+        <li>
+          One person, one account. Don't share your account or let anyone else
+          use it, and never anyone under 18.
+        </li>
+        <li>Keep your details accurate.</li>
+      </ul>
+      <p>
+        You can delete your account at any time from inside the app. Deletion is
+        permanent and removes your stories and settings from your account - the
+        <a href="./privacy.html">Privacy Policy</a> explains exactly what
+        happens to your data.
+      </p>
+
+      <h2><span class="n">05</span>What Vyenne makes</h2>
+      <p>
+        Vyenne creates personalised adult-romance stories from the choices you
+        make. It can also create a cover and narrate the story aloud.
+      </p>
+      <p>
+        <b
+          >Story text, narration and cover art are generated by AI providers
+          working to our instructions.</b
+        >
+        Every story is <b>fiction</b>. Its characters are invented and do not
+        depict real people, even when a name or detail resembles one. AI output
+        can be repetitive, inaccurate or not to your taste, and we do not
+        promise a particular result. Stories are for entertainment, not advice.
+      </p>
+      <p>
+        To create your story, the choices you make are sent to those providers.
+        Our <a href="./privacy.html">Privacy Policy</a> explains what data is
+        sent and how it is handled.
+      </p>
+
+      <h2><span class="n">06</span>Acceptable use</h2>
+      <p>Use Vyenne lawfully and decently. You must not:</p>
+      <ul>
+        <li>
+          Try to create content involving anyone under 18, real identifiable
+          people, non-consent, family, animals, or anything illegal - however
+          it's phrased.
+        </li>
+        <li>
+          Work around the safety checks, age confirmation, or other technical
+          protections.
+        </li>
+        <li>
+          Use bots, scripts, or automated tools to create stories, or create in
+          bulk for redistribution.
+        </li>
+        <li>Resell, scrape, or redistribute the service or its content.</li>
+        <li>Use the app to harass or harm anyone.</li>
+      </ul>
+      <p>
+        Every request and every finished story is checked automatically against
+        a fixed set of boundaries that never move, for anyone - our
+        <a href="./code-of-conduct.html">Code of conduct</a> sets them out in
+        full, and it forms part of these terms.
+      </p>
+      <p>
+        <b
+          >Content involving minors is not a boundary you can brush against -
+          it's prohibited outright.</b
+        >
+        Any attempt ends the account immediately and is reported to the
+        authorities. No exceptions, no second chance.
+      </p>
+
+      <h2><span class="n">07</span>Your stories</h2>
+      <p>
+        The stories you create are yours to enjoy for
+        <b>personal, private and non-commercial use</b>. We grant you a personal
+        licence to read and listen to them within the app.
+      </p>
+      <ul>
+        <li>
+          Your licence is for you alone. You may not share, send, publish,
+          resell, republish, or redistribute any story, narration, or cover art,
+          in whole or in part.
+        </li>
+        <li>
+          Because stories are AI-generated, similar content may be created for
+          other readers. We can't grant you exclusive ownership of generated
+          text, audio, or artwork.
+        </li>
+      </ul>
+      <p>
+        We keep all rights to the Vyenne app, brand, design, and the technology
+        behind it.
+      </p>
+
+      <h2><span class="n">08</span>Fair use</h2>
+      <p>
+        Story creation is unlimited for personal reading. We may temporarily
+        decline new requests where activity appears automated, is made in bulk
+        for resale or redistribution, or runs at a rate no reader could
+        reasonably follow.
+      </p>
+      <p>
+        At very high volumes, new cover art may depict the story's setting
+        rather than its cast. New narration is subject to a rolling monthly
+        allowance. Replaying narration already created for you does not use that
+        allowance.
+      </p>
+      <p>
+        Fair-use limits do not close an account simply because someone reads or
+        creates a lot. Automation, resale, redistribution, account transfer, or
+        attempts to evade the limits may lead to suspension or closure.
+      </p>
+      <p>
+        Current thresholds and renewal details are available inside Vyenne under
+        Account → Legal documents → Fair use policy.
+      </p>
+
+      <h2><span class="n">09</span>Subscriptions &amp; billing.</h2>
+      <p>
+        Some Vyenne features require a Premium subscription. Your first narrated
+        listen is free; after that, listening requires Premium.
+      </p>
+      <p>
+        Premium is available monthly or annually through Apple's in-app
+        purchase. It may begin with a free trial. Apple shows the trial length,
+        renewal price, billing date and included features before you subscribe.
+        Cancel before the trial converts to a paid subscription and you will not
+        be charged.
+      </p>
+      <p>
+        Apple handles the payment under its standard terms. Premium renews
+        automatically until cancelled. You can cancel at any time in your Apple
+        account settings. Cancelling stops the next renewal, and you keep
+        Premium until the current billing period ends.
+      </p>
+      <p>
+        Refund requests are handled by Apple through
+        <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
+        Vyenne cannot issue Apple refunds directly.
+      </p>
+      <p>
+        Premium becomes available as soon as your subscription starts. Under
+        Apple's terms, a 14-day cancellation right may apply to the initial
+        purchase. That right can be lost once digital content starts, where you
+        requested immediate delivery and acknowledged that the cancellation
+        right would be lost.
+      </p>
+      <p>
+        Your UK consumer rights still apply. Premium must be as described and of
+        satisfactory quality. If something Vyenne is responsible for is faulty,
+        you are entitled to the remedies provided by law.
+      </p>
+
+      <h2><span class="n">10</span>Ending your access</h2>
+      <p>
+        You can stop using Vyenne and delete your account at any time from
+        inside the app. Deletion is permanent.
+      </p>
+      <p>
+        Deleting your account does not cancel Premium. You must cancel it
+        separately in your Apple account settings to stop the next renewal.
+      </p>
+      <p>
+        We may suspend or end your access if you break these terms or the Code
+        of conduct, or if the law requires it. Where it is fair to do so, we
+        will warn you first. Serious breaches, including anything involving a
+        minor, may lead to immediate closure.
+      </p>
+      <p>
+        If we close your account and you lose paid Premium access, we will help
+        you request any refund due through Apple. Refunds remain subject to
+        Apple's process, applicable law, and whether the closure followed a
+        serious breach.
+      </p>
+
+      <h2><span class="n">11</span>What we're responsible for</h2>
+      <p>
+        Vyenne is an early, evolving service. We run it with reasonable care and
+        back up your account and library, but no service is flawless and
+        occasionally something may go wrong.
+      </p>
+      <p>
+        <b
+          >Except where the law does not allow it, our liability to you is
+          limited to the amount you paid us in the 12 months before the problem
+          arose.</b
+        >
+      </p>
+      <p>
+        Nothing here takes away rights UK consumer law gives you. Nothing
+        excludes our liability for death or personal injury caused by our
+        negligence, or for fraud.
+      </p>
+
+      <h2><span class="n">12</span>Changes to these terms</h2>
+      <p>
+        We may update these terms as Vyenne changes. If a change materially
+        affects your rights or paid access, we will tell you in the app before
+        it takes effect.
+      </p>
+      <p>
+        Using Vyenne after the change takes effect means you accept the updated
+        terms. If you do not accept them, stop using the app, cancel Premium and
+        delete your account.
+      </p>
+
+      <h2><span class="n">13</span>Law &amp; disputes</h2>
+      <p>
+        If something has gone wrong, email
+        <a href="mailto:founder@vyenne.com">founder@vyenne.com</a> first and a
+        person will try to put it right.
+      </p>
+      <p>
+        These terms are governed by the law of <b>England and Wales</b>.
+        Disputes go to the courts of England and Wales. If you live in Scotland
+        or Northern Ireland, you can also use your local courts.
+      </p>
+
+      <div class="foot">
+        Questions? Email <a href="mailto:help@vyenne.app">help@vyenne.app</a>.
+      </div>
+    </div>
+  </body>
 </html>
