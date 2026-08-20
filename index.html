@@ -26,7 +26,7 @@
   --shadow:0 24px 60px -18px rgba(0,0,0,.7);
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-snap-type:y proximity}
+html{scroll-behavior:smooth;scroll-snap-type:y mandatory}
 body{font-family:'Inter',-apple-system,system-ui,sans-serif;background:var(--bg);color:var(--ink);
   overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
@@ -124,7 +124,6 @@ h2{font-family:'Playfair Display',serif;font-style:italic;font-weight:600;font-s
 
 /* --- feature (screenshot + copy) ---------------------------- */
 .feature{display:grid;gap:clamp(32px,6vw,72px);align-items:center;grid-template-columns:1fr}
-.feature.flip .copy{order:2}
 .phone{justify-self:center;position:relative;width:min(300px,74vw)}
 .phone .device{border-radius:44px;padding:11px;background:linear-gradient(160deg,#2a2138,#171021);
   box-shadow:var(--shadow);border:1px solid var(--border)}
@@ -183,7 +182,6 @@ footer .micro{width:100%;font-size:11px;letter-spacing:.06em;color:var(--ink3)}
     linear-gradient(180deg, rgba(18,11,26,.5) 0%, rgba(18,11,26,.08) 20%, rgba(18,11,26,.10) 40%,
     rgba(18,12,26,.62) 60%, rgba(18,12,26,.94) 82%, #120F1A 96%)}
   .feature{grid-template-columns:1fr 1fr}
-  .feature.flip .copy{order:0}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto;scroll-snap-type:none}
@@ -229,15 +227,15 @@ footer .micro{width:100%;font-size:11px;letter-spacing:.06em;color:var(--ink3)}
 
   <!-- ===== BUILDER ===== -->
   <section id="create">
-    <div class="feature flip">
-      <div class="phone">
-        <div class="halo" aria-hidden="true"></div>
-        <div class="device"><img src="./assets/website/shot-builder.png" alt="Vyenne's story builder, setting the cast, the scene and the heat" loading="lazy" /></div>
-      </div>
+    <div class="feature">
       <div class="copy">
         <p class="eyebrow">You're the author</p>
         <h2>Exactly as you imagined it.</h2>
         <p class="lede">A romance with whoever you want, however you want it. Set every detail - the cast, the dynamic, the scene, and any cravings you have - or let Vyenne surprise you.</p>
+      </div>
+      <div class="phone">
+        <div class="halo" aria-hidden="true"></div>
+        <div class="device"><img src="./assets/website/shot-builder.png" alt="Vyenne's story builder, setting the cast, the scene and the heat" loading="lazy" /></div>
       </div>
     </div>
     <a class="section-next" href="#series" aria-label="Continue to stories and series">
@@ -265,11 +263,7 @@ footer .micro{width:100%;font-size:11px;letter-spacing:.06em;color:var(--ink3)}
 
   <!-- ===== READ IT, OR HEAR IT ===== -->
   <section id="listen">
-    <div class="feature flip">
-      <div class="phone">
-        <div class="halo" aria-hidden="true"></div>
-        <div class="device"><img src="./assets/website/shot-reader.png" alt="Vyenne's reading page, a story open on screen" loading="lazy" /></div>
-      </div>
+    <div class="feature">
       <div class="copy">
         <p class="eyebrow">Read it, or hear it</p>
         <h2>Beautiful writing, and a voice just for you.</h2>
@@ -288,6 +282,10 @@ footer .micro{width:100%;font-size:11px;letter-spacing:.06em;color:var(--ink3)}
           </div>
           <span class="btn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
         </div>
+      </div>
+      <div class="phone">
+        <div class="halo" aria-hidden="true"></div>
+        <div class="device"><img src="./assets/website/shot-reader.png" alt="Vyenne's reading page, a story open on screen" loading="lazy" /></div>
       </div>
     </div>
     <a class="section-next" href="#privacy" aria-label="Continue to privacy">
@@ -317,9 +315,6 @@ footer .micro{width:100%;font-size:11px;letter-spacing:.06em;color:var(--ink3)}
         <span><small>Download on the</small><strong>App Store</strong></span>
       </a>
     </div>
-    <a class="section-next" href="#site-footer" aria-label="Continue to website links">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-    </a>
   </section>
 
   <!-- ===== FOOTER ===== -->
@@ -332,6 +327,21 @@ footer .micro{width:100%;font-size:11px;letter-spacing:.06em;color:var(--ink3)}
     </div>
     <div class="micro">18+ · adult fiction · VOX NOVA LTD</div>
   </footer>
+
+  <script>
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    document.querySelectorAll('.scrollcue[href^="#"], .section-next[href^="#"]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        event.preventDefault();
+        target.scrollIntoView({
+          behavior: reduceMotion.matches ? 'auto' : 'smooth',
+          block: 'start'
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
