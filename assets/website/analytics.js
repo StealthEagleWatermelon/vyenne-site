@@ -150,20 +150,29 @@
     style.textContent = `
       .vy-analytics {
         position: fixed; z-index: 2147483646; left: 16px; right: 16px; bottom: 16px;
-        max-width: 560px; margin: 0 auto; padding: 18px;
+        max-width: 560px; margin: 0 auto; padding: 20px;
         color: #ede8f5; background: rgba(30, 22, 40, .98);
-        border: 1px solid rgba(176, 157, 216, .32); border-radius: 18px;
+        border: 1px solid rgba(176, 157, 216, .18); border-radius: 18px;
         box-shadow: 0 18px 48px rgba(0, 0, 0, .42);
         font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       }
       .vy-analytics[hidden] { display: none; }
-      .vy-analytics h2 { margin: 0 0 6px; color: #ede8f5; font: 600 18px/23px 'Playfair Display', Georgia, serif; }
-      .vy-analytics p { margin: 0; color: #b9acd1; font: 400 13px/19px Inter, sans-serif; }
+      .vy-analytics h2 {
+        margin: 0 0 6px; color: #ede8f5;
+        font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-style: italic;
+        font-weight: 600; line-height: 23px; letter-spacing: 0;
+      }
+      .vy-analytics p {
+        margin: 0; color: #a89ac6;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 13px; font-style: normal; font-weight: 400; line-height: 19px;
+      }
       .vy-analytics p a { color: #ccb8ec; }
       .vy-analytics__actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
       .vy-analytics button, [data-vy-analytics-settings] {
-        min-height: 44px; border-radius: 14px; padding: 0 16px; cursor: pointer;
-        font: 600 13px/1 Inter, sans-serif;
+        min-height: 44px; border-radius: 16px; padding: 0 16px; cursor: pointer;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 13px; font-style: normal; font-weight: 600; line-height: 1;
       }
       .vy-analytics button:focus-visible, [data-vy-analytics-settings]:focus-visible {
         outline: 3px solid rgba(176, 157, 216, .55); outline-offset: 2px;
