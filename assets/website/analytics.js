@@ -200,7 +200,7 @@
     dialog.innerHTML = `
       <div>
         <h2 id="vy-analytics-title">Website analytics</h2>
-        <p id="vy-analytics-copy">Allow website analytics to count visits, referral sources and App Store taps. No names or advertising tracking. <a href="./privacy.html#website-analytics">Privacy</a></p>
+        <p id="vy-analytics-copy">We use analytics cookies to count visits and see how people find the site. No names, no ads, no data selling. <a href="./privacy.html#website-analytics">Privacy</a></p>
       </div>
       <div class="vy-analytics__actions">
         <button class="vy-analytics__allow" type="button">Allow</button>
