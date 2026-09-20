@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Vyenne - Privacy Policy</title>
+    <script src="./assets/website/analytics.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Playfair+Display:ital,wght@0,400;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap"
@@ -219,7 +220,7 @@
       <div class="mark">Vyenne</div>
       <h1>Privacy Policy</h1>
       <p class="meta">
-        Effective 18 September 2026 &middot; Controller: VOX NOVA LTD, United
+        Effective 20 September 2026 &middot; Controller: VOX NOVA LTD, United
         Kingdom
       </p>
       <p class="lead">
@@ -297,6 +298,13 @@
           characters, tastes or limits. This is on by default; you can turn it
           off any time in App settings.
         </li>
+        <li id="website-analytics">
+          <b>Website analytics</b> - if you allow it, the page visited,
+          referring website or campaign, App Store taps, and random website and
+          session identifiers. It does not include your name, email, precise
+          location, or the full page you came from. Your IP address is excluded
+          from Mixpanel's stored event data.
+        </li>
       </ul>
       <h2><span class="n">03</span>What never leaves your phone</h2>
       <p>
@@ -353,14 +361,19 @@
           email, stories, titles or tastes, and you can turn it off in App
           settings.
         </li>
+        <li>
+          Count website visits, see which sources bring people to the site, and
+          measure App Store taps where a visitor has allowed website analytics.
+        </li>
         <li>Meet our legal duties and respond to lawful requests.</li>
       </ul>
       <p>
         We rely on our contract with you when processing is needed to provide
         Vyenne. We rely on our legitimate interests when keeping the service
         safe, preventing misuse, fixing faults, and understanding how the app is
-        used to improve it. We rely on legal obligations where the law requires
-        us to keep or disclose information.
+        used to improve it. Website analytics runs only after you allow it, so
+        consent is the basis for that processing. We rely on legal obligations
+        where the law requires us to keep or disclose information.
       </p>
 
       <h2><span class="n">06</span>Who we share data with</h2>
@@ -402,13 +415,25 @@
         <div class="r">
           <div class="who">App activity</div>
           <div class="what">
-            An analytics provider receives app-activity data - screens, taps and
+            Mixpanel receives app-activity data - screens, taps and
             random app, account and device identifiers, never your stories,
             titles or tastes - to help us see how the app is used and improve it.
             It is stored in the EU. You can turn this off in App settings.
           </div>
         </div>
+        <div class="r">
+          <div class="who">Website activity</div>
+          <div class="what">
+            If you allow website analytics, Mixpanel receives the limited
+            website data listed above. It is stored in the EU and is not used
+            for advertising. You can change your choice below.
+          </div>
+        </div>
       </div>
+
+      <button type="button" data-vy-analytics-settings hidden>
+        Website analytics settings
+      </button>
 
       <h2><span class="n">07</span>Where your data goes</h2>
       <p>
@@ -427,7 +452,9 @@
         saved choices so Vyenne remains available to you. Operational logs are
         normally deleted after 30 days. Safety records may be kept longer where
         needed to investigate misuse, enforce our terms or meet a legal
-        obligation.
+        obligation. Mixpanel analytics events are deleted after 12 months. Your
+        website analytics choice is remembered in your browser for six months;
+        choosing "No thanks" removes the website identifier from that browser.
       </p>
 
       <h2><span class="n">09</span>Deleting your account</h2>
