@@ -238,6 +238,11 @@ footer .micro{width:100%;font-size:11px;letter-spacing:.06em;color:var(--ink3)}
   .listen-media{justify-self:end;align-items:flex-end;max-width:500px;margin-right:80px}
   .phone .audio{right:-70px;bottom:150px;width:290px}
 }
+@media (max-width:759px){
+  .band .tag .mobile-line,
+  h2.mobile-two-line .mobile-line{display:block;white-space:nowrap}
+  h2.mobile-two-line{max-width:none;font-size:clamp(22px,7vw,28px)}
+}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto;scroll-snap-type:none}
   .scrollcue .chev,.section-next svg,.wave i,.trio i{animation:none}
@@ -273,7 +278,7 @@ footer .micro{width:100%;font-size:11px;letter-spacing:.06em;color:var(--ink3)}
 
   <!-- ===== TAGLINE ===== -->
   <section id="made" class="band">
-    <p class="tag">Made for you. <span class="rose ital">Made by you.</span></p>
+    <p class="tag"><span class="mobile-line">Made for you.</span> <span class="mobile-line rose ital">Made by you.</span></p>
     <p class="lede">Tell Vyenne what you love, and a brand new, seductive story is created - shaped by you, and no one else.</p>
     <a class="section-next" href="#create" aria-label="Continue to create your story">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
@@ -321,7 +326,7 @@ footer .micro{width:100%;font-size:11px;letter-spacing:.06em;color:var(--ink3)}
     <div class="feature">
       <div class="copy">
         <p class="eyebrow">Read it, or hear it</p>
-        <h2>Beautiful writing, and a voice just for you.</h2>
+        <h2 class="mobile-two-line"><span class="mobile-line">Beautiful writing,</span> <span class="mobile-line">and a voice just for you.</span></h2>
         <p class="lede">Get lost in the words on the page - or let a warm narrator read the whole story aloud, in the voice you choose.</p>
       </div>
       <div class="listen-media">
@@ -356,7 +361,7 @@ footer .micro{width:100%;font-size:11px;letter-spacing:.06em;color:var(--ink3)}
       <svg viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2.4"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>
     </div>
     <p class="eyebrow">Just between us</p>
-    <h2>This is your world, no one else's.</h2>
+    <h2 class="mobile-two-line"><span class="mobile-line">This is your world,</span> <span class="mobile-line">no one else's.</span></h2>
     <p class="lede">Everything you create is kept private to you - never public, never shared.</p>
     <a class="section-next" href="#download" aria-label="Continue to download Vyenne">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
